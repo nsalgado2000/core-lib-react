@@ -1,3 +1,5 @@
+import axios from "axios"
+
 export default async function HttpReq(url, params = {}, verb = 'get') {
   try {
     const response = await axios[verb.toLowerCase()](url, {
